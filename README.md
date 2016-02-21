@@ -1,13 +1,15 @@
+# repl-interview
+
 An easy to use tool for conducting productive code interviews. Built out of Li Haoyi's Ammonite and uTest.
 
-# quick start
+## quick start
 ```
-git clone
+git clone https://github.com/dbaumann/repl-interview.git
 ./install
 ~/bin/amm
 ```
 
-# how to use
+## how to use
 
 If you haven't already, familiarize yourself with Ammonite:
 http://lihaoyi.github.io/Ammonite/#Ammonite-Shell#ImprovedEditing
