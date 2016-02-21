@@ -5,6 +5,7 @@ An easy to use tool for conducting productive code interviews. Built out of Li H
 ## quick start
 ```
 git clone https://github.com/dbaumann/repl-interview.git
+cd repl-interview
 ./install
 ~/bin/amm
 ```
