@@ -1,0 +1,17 @@
+#!/bin/bash
+
+BASE="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+# install ammonite shell
+if [ ! -d ~/.ammonite ]; then
+  mkdir ~/.ammonite; curl -L -o ~/.ammonite/predef.scala https://git.io/vgOo2
+  mkdir ~/bin 2> /dev/null
+  cd ~/bin
+  curl -L -o amm https://git.io/vgOou; chmod +x amm
+fi
+
+# set up ReplInterview
+cd $BASE/.ammonite
+cp ~/.ammonite/predef.scala ~/.ammonite/predef.scala.$(date +%Y-%m-%dT%H:%M:%S%z)
+cp predef.scala ~/.ammonite
+cp history_seed.scala ~/.ammonite/history_seed.scala
